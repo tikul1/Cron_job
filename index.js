@@ -11,7 +11,7 @@ app.use(
   })
 );
 const cronJob = require("./controllers/cronController");
-cron.schedule("27 15 * * *", function () {
+cron.schedule("40 53 16 * * *", function () {
   console.log("hey");
   cronJob.cronList();
 });
