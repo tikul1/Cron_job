@@ -6,11 +6,9 @@ const cronUser = require("../models/cronModel");
 const cronList = async (req, res) => {
   try {
     const user = await cronUser.find();
-    res.json({ msg: "Cron working" });
-    console.log("hey");
-  } catch (e) {
-    res.json({ e });
-  }
+    console.log(user);
+    console.log("hello");
+  } catch (e) {}
 };
 
 module.exports = { cronList };
