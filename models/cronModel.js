@@ -7,12 +7,13 @@ const userSchema = new mongoose.Schema({
   lastname: {
     type: String,
   },
+  dateOfNotification: {
+    type: Date,
+    default: new Date().toISOString(),
+  },
 
   email: {
     type: String,
-    // required: true,
-    // unique: true,
-    // lowercase: true,
   },
   age: {
     type: Number,
